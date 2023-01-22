@@ -1,12 +1,14 @@
 import React from "react";
-import "./App.css";
-import Navbar from "./components/navbar/navbar";
-import Filter from "./components/filter/filter";
-import Addmovie from "./components/movies/Addmovie";
-import List from "./components/list/List";
-import { moviedata } from "./components/movies/moviesdata";
+import "./home.css";
+import Navbar from "../navbar/navbar";
+import Filter from "../filter/filter";
+import Addmovie from "../movies/Addmovie";
+import List from "../list/List";
+import Details from "../details/details";
+import { moviedata } from "../movies/moviesdata";
 import { useState } from "react";
-function home() {
+import { Routes, Route } from "react-router-dom";
+function Home() {
   const [title, setTitle] = useState("");
   const [rating, setRating] = useState(1);
   const addMovie = (movie) => {
@@ -18,7 +20,6 @@ function home() {
       style={{ marginTop: "85px", backgroundColor: "rgba(0, 0, 0, 0.829)" }}
     >
       <Navbar />
-
       <Filter
         title={title}
         setTitle={setTitle}
@@ -31,9 +32,11 @@ function home() {
         <Addmovie addMovie={addMovie} />
       </div>
       <List moviedata={moviedata} title={title} rating={rating} />
-      {/* <List/> */}
+      <Routes>
+        <Route path="/details/:id" element={<Details />}></Route>
+      </Routes>
     </div>
   );
 }
 
-export default home;
+export default Home;

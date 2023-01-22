@@ -2,6 +2,7 @@ import React from "react";
 import "./list.css";
 import ListItem from "./ListItem";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 const List = ({ moviedata, title, rating }) => {
   const listRef = useRef();
 

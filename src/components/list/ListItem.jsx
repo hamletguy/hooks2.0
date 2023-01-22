@@ -1,9 +1,6 @@
-import React, { useState } from "react";
 import "./listitem.css";
-
-const ListItem = ({ index, movie }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
+import { Link } from "react-router-dom";
+const ListItem = ({ movie }) => {
   return (
     <div>
       <div className="productList">
@@ -14,6 +11,7 @@ const ListItem = ({ index, movie }) => {
             <div className="displayStack__1">
               <div className="productSales">{movie.description}</div>
             </div>
+            <Link to={`/details/${movie.id}`}>More</Link>
           </div>
         </div>
       </div>

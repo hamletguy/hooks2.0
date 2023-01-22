@@ -9,7 +9,7 @@ export const moviedata = [
     description:
       "Hiccup, a Viking, must kill a dragon to mark his passage into manhood and be initiated into his tribe. However, he ends up doing the exact opposite by befriending a deadly dragon, Night Fury.",
     rating: 5,
-    trailer: "https://www.youtube.com/watch?v=2AKsAxrhqgM",
+    trailer: "https://www.youtube.com/embed/2AKsAxrhqgM",
     poster: httyd1,
   },
   {
@@ -19,7 +19,7 @@ export const moviedata = [
     description:
       "Hiccup and Toothless are faced with the threat of Drago, a dragon trapper, bent on capturing and dominating over all dragons. However, they are determined to defeat him and restore peace on Berk.",
     rating: 5,
-    trailer: "https://www.youtube.com/watch?v=2BP38770KNo",
+    trailer: "https://www.youtube.com/embed/2BP38770KNo",
     poster: httyd2,
   },
   {
@@ -29,7 +29,7 @@ export const moviedata = [
     description:
       "Hiccup aims to unite the vikings and the dragons in order to bring peace on the island of Berk. However, he must stop the evil Grimmel and his devious plans to wipe out all dragons.",
     rating: 5,
-    trailer: "https://www.youtube.com/watch?v=SkcucKDrbOI",
+    trailer: "https://www.youtube.com/embed/SkcucKDrbOI",
     poster: httyd3,
   },
 ];
